@@ -1,11 +1,35 @@
 
 # git-for-windows-extend
 
-本仓库旨在为 **Git for Windows** 环境提供额外的常用 Linux 工具链扩展，补齐原生 Git Bash 缺失的功能。
+本项目致力于为 **Git for Windows (Git Bash)** 提供常用 **Unix/Linux 工具链扩展**，旨在补齐原生环境缺失的功能，构建更完整的 Windows 类 Unix 工作流。
 
-所有组建均从 `msys2` 项目提取。
+所有组件均提取自 [MSYS2](https://www.msys2.org/) 项目。
 
-兼容版本： **Git-2.53.0.2-64-bit**
+**当前适配版本：** `Git-2.53.0.2-64-bit`
+
+---
+
+## 项目背景 (Why this project?)
+
+### 1. 追求跨平台的一致性
+
+个人非常喜欢在 Windows 上通过 **Git Bash 终端** 使用 **Unix 工具链**，这种跨平台的工作流一致性极大地提升了工作、开发效率。然而，原生 Git Bash 自带的工具集较为精简，难以满足作为重度终端用户的需求（比如缺失 `rsync`, `wget`, `nc`, `curl`, `micro` 等）。
+
+### 2. 原生 Git for Windows 的不可替代性
+
+虽然 MSYS2 官方仓库也提供 Git 安装包，但其在以下方面的体验仍逊色于官方 **Git for Windows**：
+
+* **系统兼容：** 更好的 Windows 符号链接（Symlinks/Junctions）支持。
+* **凭据管理：** 与 Windows 凭据管理器（Git Credential Manager）的深度集成。
+* **交互细节：** 针对 Windows 控制台和路径转换的优化。
+
+### 3. 规避复杂的配置陷阱
+
+目前网络上流传的“为 Git Bash 安装 pacman 包管理器”的方案往往存在问题。
+
+我也尝试过 Git for Windows 与 MSYS2 或者  Git for Windows 与 Cygwin 共存，但均存在各种兼容性问题。
+
+**本仓库采取了更轻量、更稳定的方案：** 直接提取 MSYS2 的工具二进制及其依赖库，以“插件化”的方式扩展 Git Bash。
 
 ## 📥 组件清单
 
@@ -66,13 +90,7 @@ ssh-keygen -A
 
 ## 🚀 安装与使用
 
-### 方法 A: 直接解压 (推荐)
-
 将本仓库中的 `usr` 目录内容直接合并到 Git for Windows 的安装根目录（通常是 `C:\Program Files\Git`）。
-
-### 方法 B: 软链接 (适合开发)
-
-如果你不想污染 Git 的原始目录，可以将本仓库的 `bin` 路径添加到 Windows 的 `PATH` 环境变量中。
 
 ## 🔗 参考
 
