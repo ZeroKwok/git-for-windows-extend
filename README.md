@@ -82,6 +82,25 @@ ssh-keygen -A
 ./usr/bin/netcat.exe
 ```
 
+### 系统/进程监视
+
+用于监视系统及其进程的实用程序来自 procps-ng
+
+```text
+/usr/bin/free.exe
+/usr/bin/msys-proc2-1.dll
+/usr/bin/pgrep.exe
+/usr/bin/pidof.exe
+/usr/bin/pkill.exe
+/usr/bin/pmap.exe
+/usr/bin/procps.exe
+/usr/bin/top.exe
+/usr/bin/uptime.exe
+/usr/bin/vmstat.exe
+/usr/bin/w.exe
+/usr/bin/watch.exe
+```
+
 ### 终端文本编辑 (Editor)
 
 ```text
