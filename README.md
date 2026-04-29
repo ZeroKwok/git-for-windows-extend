@@ -78,6 +78,7 @@ ssh-keygen -A
 ./usr/bin/wget.exe
 ./usr/bin/nc.exe
 ./usr/bin/netcat.exe
+./usr/bin/msys-md-0.dll
 ```
 
 ### 系统/进程监视
