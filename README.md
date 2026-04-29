@@ -75,8 +75,6 @@ ssh-keygen -A
 ### 网络与传输工具 (Networking)
 
 ```text
-./usr/bin/curl.exe
-./usr/bin/wcurl
 ./usr/bin/wget.exe
 ./usr/bin/nc.exe
 ./usr/bin/netcat.exe
