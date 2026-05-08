@@ -72,5 +72,9 @@ check_extension "watch" "-v"
 # micro
 check_extension "micro" "-version"
 
+# other
+check_extension "zstd" "-h"
+check_extension "unzstd" "-h"
+
 echo "--------------------------------------------------------"
 echo -e "${YELLOW}Verification Complete!${NC}"

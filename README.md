@@ -13,7 +13,7 @@
 
 ### 1. 追求跨平台的一致性
 
-个人非常喜欢在 Windows 上通过 **Git Bash 终端** 使用 **Unix 工具链**，这种跨平台的工作流一致性极大地提升了工作、开发效率。然而，原生 Git Bash 自带的工具集较为精简，难以满足作为重度终端用户的需求（比如缺失 `rsync`, `wget`, `nc`, `curl`, `micro` 等）。
+个人非常喜欢在 Windows 上通过 **Git Bash 终端** 使用 **Unix 工具链**，这种跨平台的工作流一致性极大地提升了工作、开发效率。然而，原生 Git Bash 自带的工具集较为精简，难以满足作为重度终端用户的需求（比如缺失 `rsync`, `wget`, `nc`, `micro` 等）。
 
 ### 2. 原生 Git for Windows 的不可替代性
 
@@ -75,10 +75,10 @@ ssh-keygen -A
 ### 网络与传输工具 (Networking)
 
 ```text
-./usr/bin/wget.exe
-./usr/bin/nc.exe
-./usr/bin/netcat.exe
-./usr/bin/msys-md-0.dll
+usr/bin/wget.exe
+usr/bin/nc.exe
+usr/bin/netcat.exe
+usr/bin/msys-md-0.dll
 ```
 
 ### 系统/进程监视
@@ -103,7 +103,14 @@ ssh-keygen -A
 ### 终端文本编辑 (Editor)
 
 ```text
-./usr/bin/micro.exe
+usr/bin/micro.exe
+```
+
+### 其他
+
+```text
+usr/bin/unzstd.exe
+usr/bin/zstd.exe
 ```
 
 ## 🚀 安装与使用
